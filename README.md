@@ -5,6 +5,21 @@ Previously, we published an integrative analysis of miRNA:mRNA interactions in a
 
 The purpose of this repository is to explore various bioinformatics tools available to analyze PAR-CLIP miRNA:mRNA interactome data integrated with corresponding miRNA and mRNA expression data. We will use our published HK-2 cell data in order to reproduce the findings and expand our analysis using a network approach (data accessible at NCBI GEO database (Edgar et al., 2002), accession [GSE98670](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE98670)). 
 
+## Background information
+- HK-2 (human kidney 2, [ATCC® CRL-2190™](https://www.atcc.org/products/all/CRL-2190.aspx)) is a proximal tubular cell (PTC) line derived from normal kidney, immortalized by transduction with human papilloma virus 16 (HPV-16) E6/E7 genes.
+- Ryan et al.(Kidney Int. 1994; [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/8127021)) describes the establishment of the HK-2 cell line and evaluates its phenotype and functional characteristics.
+- Previously in the Iacomini lab, two studies examined the signatures of microRNA expression in mice after renal ischemia-reperfusion injury:
+  - Godwin et al. (PNAS 2010; [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/20651252)) identified nine miRNAs that were differentially expressed following IRI compared to sham controls. They further demonstrated that these effects were lymphocyte-independent and explored the potential protective role of miR-21 upregulation in tubular epithelial cells following renal injury. 
+  - Shapiro et al. (PLoS One 2011; [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/21887224)) evaluated whether the microRNA expression signatures (571 miRNAs, 8 timepoints) could be used to define a biomarker of of renal IRI.
+- Yuan et al. (AJT 2015; [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/25854542) examined the role of microRNAs in CsA-induced nephrotoxicity. Using an *in vivo* mouse model and human cell lines the authors demonstrated that CsA treatment induces miR-494 expresission in proximal tubule epithelial cells (PTECs) which targets and inhibits *PTEN* expression. Blockade of miR-494/*PTEN* targeting prevented CsA-induced epithelial-to-mesenchymal transition (EMT).  
+- Chen et al. (Transpl Int. 2015; [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/25266172))
+- Gooch et al. (PLoS One 2017; [pubmed](https://www.ncbi.nlm.nih.gov/pubmed/28414804))
+
+
+
 ## List of data files
 - [hsa_mature_dna.fasta](https://github.com/cbenway/mirna-csa-hk2/blob/master/hsa_mature_dna.fasta) - FASTA file of all mature miRNA sequences in DNA format from mirBase 21 (2015). For use with [SeedVicious v1.1](https://seedvicious.essex.ac.uk/) prediction of miRNA target sites.
+
+## Differential expression of mRNA and miRNA in CsA-treated HK-2 human kidney proximal tuble cells
+Recently, [BioJupies](https://amp.pharm.mssm.edu/biojupies/) was developed by the [Ma-ayan Lab](http://icahn.mssm.edu/research/labs/maayan-laboratory) @ the Icahn Schoold of Medicine at Mount Sinai ([paper](pubmed...) ;[source code](https://github.com/MaayanLab/biojupies)). This tool provides super fast differential expression reports on GEO data or user-uploaded FASTQs or count data. To evaluate the tool and compare to my own published analysis I produced reports for [mRNA](https://amp.pharm.mssm.edu/biojupies/notebook/UyVNJKXtV) and [miRNA](https://amp.pharm.mssm.edu/biojupies/notebook/6ohGMu6LB) differential expression in HK-2 cells treated with Cyclosporine A.
 
